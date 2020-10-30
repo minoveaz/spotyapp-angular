@@ -25,7 +25,7 @@ hr {
 	cursor: pointer;
 }
 .img-circle {
-	border-radius: 100%;
+	border-radius: 100% !important;
 	width: 150px;
 }
 .card-title {
@@ -58,4 +58,14 @@ hr {
 }
 .fadeIn {
 	animation-name: fadeIn;
+}
+
+.table th,td{
+	color: white;
+	border-top: 0px !important;
+
+}
+
+.player{
+	background-color: black ;
 }
