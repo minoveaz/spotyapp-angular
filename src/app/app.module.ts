@@ -15,6 +15,7 @@ import { CardsComponent } from './components/cards/cards.component';
 import { NoimagePipe } from './pipes/noimage.pipe';
 import { LoadingComponent } from './components/shared/loading/loading.component';
 import {DomseguroPipe} from './pipes/domseguro.pipe';
+import { MusicPlayerComponent } from './components/shared/music-player/music-player.component';
 
 
 @NgModule({
@@ -27,7 +28,8 @@ import {DomseguroPipe} from './pipes/domseguro.pipe';
     NoimagePipe,
     DomseguroPipe,
     CardsComponent,
-    LoadingComponent
+    LoadingComponent,
+    MusicPlayerComponent
   ],
   imports: [
     BrowserModule,

@@ -4,5 +4,11 @@
     <h2>Error</h2>
     <p>{{mensajeError}}</p>
 </div>
-
-<app-cards [items]="newSongs"></app-cards>
+<div class="container home ">
+    <div class="row ">
+        <h3 class="title-home">Top New Tracks in Spotify</h3>
+    </div>
+    <div class="row">
+        <app-cards [items]="newSongs" class="m-1"></app-cards>
+    </div>
+</div>

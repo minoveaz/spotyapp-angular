@@ -14,14 +14,15 @@ export class ArtistComponent implements OnInit {
   artist: any = {};
   topTracks: any = {};
   loading: boolean;
+  imagenFondo: any = {};
 
   constructor( private router: ActivatedRoute,
                private spotify: SpotifuService) {
-    this.loading = true;
+                this.loading = true;
 
-    this.router.params.subscribe( params => {
-      this.getArtist( params['id']);
-      this.getTopTracks( params['id']);
+                this.router.params.subscribe( params => {
+                this.getArtist( params['id']);
+                this.getTopTracks( params['id']);
     });
   }
 
@@ -43,6 +44,8 @@ export class ArtistComponent implements OnInit {
             this.topTracks = topTracks;
           });
   }
+
+
 
   ngOnInit(): void {
   }
