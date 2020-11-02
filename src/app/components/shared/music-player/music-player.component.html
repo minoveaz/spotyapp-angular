@@ -4,10 +4,10 @@
             <div class="imagePlayer__img"></div>
         </div>
         <div class="imagePlayer__name">
-            <a href=""> Metallica</a>
+            <a href=""> {{file.artist}}</a>
         </div>
         <div class="imagePlayer__track"> 
-            <a href=""> The Unforgiven II</a>
+            <a href=""> {{file.track}}</a>
         </div>
     </div>
     <div class="timePlayer ">
@@ -22,7 +22,7 @@
                     <button class="button__backward"><i class="fa fa-step-backward"></i></button>
                 </div>
                 <div class="control-button-wrapper">
-                    <button class="button__play">
+                    <button (click)="playPause3(file.url)"class="button__play" id="playButton">
                         <i class="fa fa-play"></i>
                     </button>
                 </div>

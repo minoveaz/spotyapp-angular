@@ -20,7 +20,7 @@ export class HomeComponent implements OnInit {
       .subscribe( (data: any) => {
         this.newSongs = data;
         this.loading = false;
-      }, ( errorServicio ) =>{
+      }, ( errorServicio ) => {
         this.error = true;
         this.mensajeError = errorServicio.error.error.message;
         this.loading = false;
